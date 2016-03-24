@@ -1,0 +1,26 @@
+//
+//  SWSPrefixHeader.pch
+//  Swift_demo
+//
+//  Created by 施文松 on 16/3/22.
+//  Copyright © 2016年 Shiwensong. All rights reserved.
+//
+
+#ifndef SWSPrefixHeader_pch
+#define SWSPrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "UIImageView+WebCache.h"
+#import "SDWebImageManager.h"
+#import <SDWebImage/UIImageView+WebCache.h>
+
+#import "MBProgressHUD.h"
+#import "MJRefresh.h"
+
+#import "AFNetworking.h"
+#import <AFNetworking/AFNetworking.h>
+
+
+#endif /* SWSPrefixHeader_pch */
