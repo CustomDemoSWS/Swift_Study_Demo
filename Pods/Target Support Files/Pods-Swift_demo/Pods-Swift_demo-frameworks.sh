@@ -84,14 +84,16 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "Pods-Swift_demo/AFNetworking.framework"
-  install_framework "Pods-Swift_demo/MBProgressHUD.framework"
-  install_framework "Pods-Swift_demo/MJRefresh.framework"
-  install_framework "Pods-Swift_demo/SDWebImage.framework"
+  install_framework "$CONFIGURATION_BUILD_DIR/Alamofire/Alamofire.framework"
+  install_framework "$CONFIGURATION_BUILD_DIR/BRUIRepeat/BRUIRepeat.framework"
+  install_framework "$CONFIGURATION_BUILD_DIR/MBProgressHUD/MBProgressHUD.framework"
+  install_framework "$CONFIGURATION_BUILD_DIR/MJRefresh/MJRefresh.framework"
+  install_framework "$CONFIGURATION_BUILD_DIR/SDWebImage/SDWebImage.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "Pods-Swift_demo/AFNetworking.framework"
-  install_framework "Pods-Swift_demo/MBProgressHUD.framework"
-  install_framework "Pods-Swift_demo/MJRefresh.framework"
-  install_framework "Pods-Swift_demo/SDWebImage.framework"
+  install_framework "$CONFIGURATION_BUILD_DIR/Alamofire/Alamofire.framework"
+  install_framework "$CONFIGURATION_BUILD_DIR/BRUIRepeat/BRUIRepeat.framework"
+  install_framework "$CONFIGURATION_BUILD_DIR/MBProgressHUD/MBProgressHUD.framework"
+  install_framework "$CONFIGURATION_BUILD_DIR/MJRefresh/MJRefresh.framework"
+  install_framework "$CONFIGURATION_BUILD_DIR/SDWebImage/SDWebImage.framework"
 fi

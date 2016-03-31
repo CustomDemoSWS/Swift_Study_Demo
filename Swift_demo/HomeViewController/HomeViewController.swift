@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class HomeViewController: BaseViewController {
     
     //MARK: - LifeCycle
@@ -42,15 +43,13 @@ class HomeViewController: BaseViewController {
         self.navigationItem.rightBarButtonItems = [spacerButton1, addGoodFriendButtonItem]
 
         
-//        let titleButton = UIButton(type: UIButtonType.Custom)
-//        titleButton.frame = CGRectMake(0, -20, 100, 10)
-//        titleButton.setTitle("施文松", forState: UIControlState.Normal)
-//        titleButton.setTitleColor(UIColor.redColor(), forState: UIControlState.Normal)
-//        titleButton.setImage(UIImage(named: "navigationbar_city_dark"), forState: UIControlState.Normal) 
-//        let centerPoint = (self.navigationController?.navigationBar.center)!
-//        titleButton.center = centerPoint
-//        self.navigationController?.navigationBar.backgroundColor = UIColor.greenColor()
-//        self.navigationController?.navigationBar.addSubview(titleButton)
+        
+    
+        
+        
+        
+        
+        
         
         
     }
@@ -88,21 +87,7 @@ class HomeViewController: BaseViewController {
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         
-//        Network.request("GET", url: "http://pitayaswift.sinaapp.com/pitaya.php", params: ["get": "Network", "name": "shiwensong"]) { (data, response, error) -> Void in
-//            let string = NSString(data: data, encoding: NSUTF8StringEncoding)
-//            print(string)
-//        }
         
-//        Network.request("POST", url: "http://pitayaswift.sinaapp.com/pitaya.php", params: ["post": "Network"]) { (data, response, error) -> Void in
-//            let string = NSString(data: data, encoding: NSUTF8StringEncoding)
-//            println(string)
-//        }
-        
-        Network.request("POST", url: "http://pitayaswift.sinapp.com/pitaya.php", params:["post" : "Network"]){
-            (data, response, error) -> Void in
-            let string = NSString(data: data!, encoding: NSUTF8StringEncoding)
-            print(string)
-        }
         
     }
     

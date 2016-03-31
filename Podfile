@@ -8,8 +8,8 @@ target 'Swift_demo' do
 pod 'SDWebImage', '~> 3.7.5'
 pod 'MJRefresh' ,'~> 3.0.1'
 pod 'MBProgressHUD', '~> 0.9.2'
-pod 'AFNetworking', '~> 3.0.4’
-
+pod 'Alamofire', '~> 3.2.1'
+pod 'BRUIRepeat', '~> 1.0.2'
 end
 
 target 'Swift_demoTests' do

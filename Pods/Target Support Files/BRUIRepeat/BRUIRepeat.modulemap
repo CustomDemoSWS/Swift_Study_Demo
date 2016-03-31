@@ -1,0 +1,6 @@
+framework module BRUIRepeat {
+  umbrella header "BRUIRepeat-umbrella.h"
+
+  export *
+  module * { export * }
+}
